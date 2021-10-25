@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.slayerd.dao.BlogMapper">
+    <sql id="title-author-views">
+        <if test="title != null">
+            AND title = #{title}
+        </if>
+        <if test="author != null">
+            AND author = #{author}
+        </if>
+        <if test="views != null">
+            AND views &lt;= #{views}
+        </if>
+    </sql>
+
+    <insert id="insertBlog" parameterType="blog">
+        insert into blog
+        values (#{id}, #{title}, #{author}, #{createTime}, #{views})
+    </insert>
+
+    <update id="updateBlog" parameterType="map">
+        update blog
+        <set>
+            <if test="views != null">
+                views = #{views},
+            </if>
+        </set>
+        where title = #{title}
+    </update>
+
+    <select id="getBlogs" parameterType="map" resultType="blog">
+        select * from blog
+        <where>
+            <include refid="title-author-views"/>
+        </where>
+
+    </select>
+
+    <select id="getBlogForeach" parameterType="map" resultType="blog">
+        select * from blog
+        <where>
+            <foreach item="id" collection="ids" open="AND (" separator="or" close=")">
+                id = #{id}
+            </foreach>
+        </where>
+    </select>
+
+</mapper>
