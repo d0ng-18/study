@@ -1,0 +1,47 @@
+[DEBUG][21/10/27--20:02:05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21/10/27--20:02:05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21/10/27--20:02:05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a56cdac] was not registered for synchronization because synchronization is not active
+[DEBUG][21/10/27--20:02:05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a75e76a] will not be managed by Spring
+[DEBUG][21/10/27--20:02:05][com.slayerd3.dao.UserMapper.getUsers]==>  Preparing: select * from user ;
+[DEBUG][21/10/27--20:02:05][com.slayerd3.dao.UserMapper.getUsers]==> Parameters: 
+[DEBUG][21/10/27--20:02:05][com.slayerd3.dao.UserMapper.getUsers]<==      Total: 5
+[DEBUG][21/10/27--20:02:05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a56cdac]
+[DEBUG][21/10/27--20:03:31][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21/10/27--20:03:31][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21/10/27--20:03:31][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a56cdac] was not registered for synchronization because synchronization is not active
+[DEBUG][21/10/27--20:03:31][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a75e76a] will not be managed by Spring
+[DEBUG][21/10/27--20:03:31][com.slayerd3.dao.UserMapper.getUsers]==>  Preparing: select * from user ;
+[DEBUG][21/10/27--20:03:31][com.slayerd3.dao.UserMapper.getUsers]==> Parameters: 
+[DEBUG][21/10/27--20:03:31][com.slayerd3.dao.UserMapper.getUsers]<==      Total: 5
+[DEBUG][21/10/27--20:03:31][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a56cdac]
+[DEBUG][21/10/27--20:07:50][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21/10/27--20:07:50][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21/10/27--20:07:50][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a56cdac] was not registered for synchronization because synchronization is not active
+[DEBUG][21/10/27--20:07:50][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a75e76a] will not be managed by Spring
+[DEBUG][21/10/27--20:07:50][com.slayerd3.dao.UserMapper.getUsers]==>  Preparing: select * from user ;
+[DEBUG][21/10/27--20:07:50][com.slayerd3.dao.UserMapper.getUsers]==> Parameters: 
+[DEBUG][21/10/27--20:07:50][com.slayerd3.dao.UserMapper.getUsers]<==      Total: 5
+[DEBUG][21/10/27--20:07:50][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a56cdac]
+[DEBUG][21/10/27--20:08:21][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21/10/27--20:08:21][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21/10/27--20:08:21][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a56cdac] was not registered for synchronization because synchronization is not active
+[DEBUG][21/10/27--20:08:21][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a75e76a] will not be managed by Spring
+[DEBUG][21/10/27--20:08:21][com.slayerd3.dao.UserMapper.getUsers]==>  Preparing: select * from user ;
+[DEBUG][21/10/27--20:08:22][com.slayerd3.dao.UserMapper.getUsers]==> Parameters: 
+[DEBUG][21/10/27--20:08:22][com.slayerd3.dao.UserMapper.getUsers]<==      Total: 5
+[DEBUG][21/10/27--20:08:22][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a56cdac]
+[DEBUG][21/10/27--20:43:28][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21/10/27--20:44:14][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21/10/27--20:44:14][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21/10/27--20:44:14][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f0c8a99] was not registered for synchronization because synchronization is not active
+[DEBUG][21/10/27--20:44:15][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.jdbc.JDBC4Connection@d554c5f] will not be managed by Spring
+[DEBUG][21/10/27--20:44:15][com.slayerd3.dao.UserMapper.addUser]==>  Preparing: insert into user values (?,?,?);
+[DEBUG][21/10/27--20:44:15][com.slayerd3.dao.UserMapper.addUser]==> Parameters: 6(Integer), 张浙源(String), 123123(String)
+[DEBUG][21/10/27--20:44:15][com.slayerd3.dao.UserMapper.addUser]<==    Updates: 1
+[DEBUG][21/10/27--20:44:15][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f0c8a99]
+[DEBUG][21/10/27--20:44:15][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21/10/27--20:44:15][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@210ab13f] was not registered for synchronization because synchronization is not active
+[DEBUG][21/10/27--20:44:15][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.jdbc.JDBC4Connection@6f15d60e] will not be managed by Spring
+[DEBUG][21/10/27--20:44:15][com.slayerd3.dao.UserMapper.deleteUser]==>  Preparing: deletes from user where id = ?
+[DEBUG][21/10/27--20:44:15][com.slayerd3.dao.UserMapper.deleteUser]==> Parameters: 6(Integer)
+[DEBUG][21/10/27--20:44:15][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@210ab13f]

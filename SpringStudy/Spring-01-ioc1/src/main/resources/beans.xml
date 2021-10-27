@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--bean就是java对象 , 由Spring创建和管理-->
+    <bean id="userDaoImpl" class="com.slayerd1.dao.UserDaoImpl"/>
+    <bean id="userDaoMySqlImpl" class="com.slayerd1.dao.UserDaoMySqlImpl"/>
+    <bean id="userDaoSqlImpl" class="com.slayerd1.dao.UserDaoSqlImpl"/>
+    <!--注意: 这里的name并不是属性 , 而是set方法后面的那部分 , 首字母小写-->
+    <!--引用另外一个bean,不是用value 而是用 ref-->
+    <bean id="userServiceImpl" class="com.slayerd1.service.UserServiceImpl">
+        <property name="userDao" ref="userDaoImpl"/>
+    </bean>
+</beans>

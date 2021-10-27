@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!--这种构建bean的方法是通过实体类中默认存在的无参构造构建的bean-->
+<!--    <bean id="user" class="com.slayerd2.pojo.User">-->
+<!--        <property name="name" value="宋雨东"/>-->
+<!--        <property name="sex" value="男"/>-->
+<!--    </bean>-->
+
+
+        <!--如果要通过有参构造函数去创建bean，则有三种方式-->
+
+<!--        <bean id="user" class="com.slayerd2.pojo.User">-->
+<!--            <constructor-arg name="name" value="宋雨东"/>-->
+<!--            <constructor-arg name="sex" value="男"/>-->
+<!--        </bean>-->
+
+
+    <!--第二种方式不建议使用，如果构造函数中有多个相同类型的参数，则配置文件阅读性低-->
+<!--    <bean id="user" class="com.slayerd2.pojo.User">-->
+<!--        <constructor-arg type="java.lang.String" value="宋雨东"/>-->
+<!--        <constructor-arg type="java.lang.String" value="男"/>-->
+<!--    </bean>-->
+
+    <!--第三种方法则是根据构造器函数中的参数下标来进行赋值-->
+    <bean id="user" class="com.slayerd2.pojo.User">
+        <constructor-arg index="0" value="宋雨东"/>
+        <constructor-arg index="1" value="男"/>
+    </bean>
+
+</beans>

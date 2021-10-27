@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="address" class="com.slayerd04.pojo.Cat"/>
+    <bean id="student" class="com.slayerd04.pojo.Dog"/>
+
+<!--    &lt;!&ndash;第一种自动装配：byName，这种是通过实体类中set方法后的名字自动识别，然后将识别成功的bean装填进去&ndash;&gt;-->
+<!--    <bean id="people" class="com.slayerd04.pojo.People" autowire="byName">-->
+<!--        <property name="name" value="宋雨东"/>-->
+<!--    </bean>-->
+
+    <!--第二种自动装配：byType，这种是通过bean后面的class的指进行自动识别，然后将识别成功的bean装填进去
+    但是这种方法的弊端就是：配置文件中同一个类只能存在一个bean，不然会识别不了-->
+    <bean id="people" class="com.slayerd04.pojo.People" autowire="byType">
+        <property name="name" value="宋雨东"/>
+    </bean>
+</beans>

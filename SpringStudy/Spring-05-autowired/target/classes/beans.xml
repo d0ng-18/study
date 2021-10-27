@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+    <!--autowired注解的识别机制：先byType，如果只找到一个bean则直接注入，如果找到多个bean，则按照byName来寻找和
+    set方法的名字对应的bean，若找不到则报错
+        Resource注解也是一样，但是这种注解可以直接在注解的后面定义识别的bean的名字-->
+    <bean id="address" class="com.slayerd05.pojo.Cat"/>
+    <bean id="student" class="com.slayerd05.pojo.Dog"/>
+
+    <bean id="people" class="com.slayerd05.pojo.People">
+        <property name="name" value="宋雨东"/>
+    </bean>
+</beans>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="address" class="com.slayerd03.pojo.Address">
+        <property name="address" value="北京市房山区"/>
+    </bean>
+
+    <bean id="student" class="com.slayerd03.pojo.Student">
+        <property name="name" value="宋雨东"/>
+        <property name="address" ref="address"/>
+        <property name="book">
+            <array>
+                <value type="java.lang.Integer">1</value>
+                <value>"语文"</value>
+                <value type="java.lang.String">"数学"</value>
+            </array>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="家庭信息" value="房山区"/>
+                <entry key="性别" value="男"/>
+            </map>
+        </property>
+        <property name="hobbies">
+            <list>
+                <value>"打游戏"</value>
+                <value>"打篮球"</value>
+            </list>
+        </property>
+        <property name="videoGames">
+            <set>
+                <value>CSGO</value>
+                <value>LOL</value>
+            </set>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="user">root</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+        <property name="wife">
+            <null></null>
+        </property>
+    </bean>
+</beans>

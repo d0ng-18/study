@@ -1,0 +1,10 @@
+[DEBUG][21/10/27--19:40:31][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21/10/27--19:41:47][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21/10/27--19:42:34][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21/10/27--19:42:34][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21/10/27--19:42:34][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6253c26] was not registered for synchronization because synchronization is not active
+[DEBUG][21/10/27--19:42:34][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.jdbc.JDBC4Connection@59402b8f] will not be managed by Spring
+[DEBUG][21/10/27--19:42:34][com.slayerd2.dao.UserMapper.getUsers]==>  Preparing: select * from user ;
+[DEBUG][21/10/27--19:42:34][com.slayerd2.dao.UserMapper.getUsers]==> Parameters: 
+[DEBUG][21/10/27--19:42:34][com.slayerd2.dao.UserMapper.getUsers]<==      Total: 5
+[DEBUG][21/10/27--19:42:34][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6253c26]
